@@ -21,25 +21,17 @@ public class RectangleTest {
 	@Test
 	public void testArea1()  {
 	       Rectangle rectangle = new Rectangle(15d,10d);
-	       assertEquals(150,rectangle.area(15d,10d),0);
+	       assertEquals(150,rectangle.area(),0);
 	       
 	    }
 	
 	@Test
 	public void testPerimeter()  {
 	       Rectangle rectangle = new Rectangle(15d,10d);
-	       assertEquals(50,rectangle.perimeter(15d,10d),0);
+	       assertEquals(50,rectangle.perimeter(),0);
 	       
 	    }
 	
-	@Test
-	public void testareaComparison()  {
-	       Rectangle rectangle = new Rectangle(15d,10d,12d,7d);
-	       String str = rectangle.areaComparison(15d,10d,12d,7d);
-	       String str1 = "Areas of rectangle1 and rectangle2 are not equal";
-	       Assert.assertSame(str1,str);
-	       
-	    }
 	
 	@Test
 	public void testIllegalInput()  {

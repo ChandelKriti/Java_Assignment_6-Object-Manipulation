@@ -30,20 +30,18 @@ public class Main {
 			double breadth = scanner.nextDouble();
 			if(length > breadth) {
 			Rectangle rectangle = new Rectangle(length, breadth);
-			System.out.println("Area is : " + rectangle.area(length,breadth) );
-			System.out.println("Perimeter is : " + rectangle.perimeter(length,breadth));
-			logger.info("Area is :"+ rectangle.area(length,breadth));}
+			System.out.println("Area is : " + rectangle.area() );
+			System.out.println("Perimeter is : " + rectangle.perimeter());
+			logger.info("Area is :"+ rectangle.area());}
 			else {System.out.println("Length should be greater");}
 			break;
 		}
 		case 2:
 		{
-			double length1=15 ,breadth1=12;
-			double length2= 17 , breadth2=14;
-			Rectangle rectangle = new Rectangle(length1,breadth1,length2, breadth2  );
-			String str = rectangle.areaComparison(length1,breadth1,length2, breadth2);
-			System.out.println(str);
-			logger.info("result of Area Comparison is :"+ str);
+			Rectangle rectangle1 = new Rectangle(15d,11d);
+			Rectangle rectangle2 = new Rectangle(12d,9d);
+			System.out.println(rectangle1.hasSameAreaAs(rectangle1,rectangle2));
+			logger.info("result of Area Comparison is :"+ rectangle1.hasSameAreaAs(rectangle1,rectangle2));
 			break;
 		}
 		
